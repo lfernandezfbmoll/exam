@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="6"
+              android:padding="16dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:layout_marginEnd="8dp">
+        <Button
+                android:id="@+id/toast_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toast_button"
+                android:background="@color/counterText"
+                android:textColor="@color/buttonText"
+                android:layout_marginBottom="70dp"/>
+        <Button
+                android:id="@+id/zero_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero_button"
+                android:background="@color/counterText"
+                android:textColor="@color/buttonText"
+                android:layout_marginBottom="70dp"/>
+        <Button
+                android:id="@+id/count_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count_button"
+                android:background="@color/counterText"
+                android:textColor="@color/buttonText"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:layout_weight="5"
+            android:background="@color/counterColor"
+            android:textColor="@color/counterText"
+            android:textSize="200sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+</LinearLayout>
